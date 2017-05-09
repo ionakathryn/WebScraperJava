@@ -27,7 +27,6 @@ public class Scraper {
 
 
                 final JButton positiveNews = new JButton("good news");
-                final JButton ycombinator = new JButton("top ycombinator posts");
                 final JButton wired = new JButton("top wired posts");
 
                 positiveNews.setSize(250,100);
@@ -47,7 +46,6 @@ public class Scraper {
 
                 });
                 add(positiveNews);
-                add(ycombinator);
                 add(wired);
 
 
