@@ -28,7 +28,8 @@ public class Scraper {
 
                 final JButton positiveNews = new JButton("good news");
                 final JButton wired = new JButton("top wired posts");
-
+                
+                wired.setSize(250,100);
                 positiveNews.setSize(250,100);
                 positiveNews.addActionListener(new ActionListener() {
                     public void actionPerformed(ActionEvent e) {
