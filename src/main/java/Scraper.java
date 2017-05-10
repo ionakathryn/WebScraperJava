@@ -5,10 +5,10 @@ import org.jsoup.nodes.Element;
 
 import javax.swing.*;
 import javax.swing.JFrame;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -37,13 +37,34 @@ public class Scraper {
                 final JButton wired = new JButton("top wired posts");
                 final JButton stackOverflow = new JButton("top stack overflow posts");
 
-                wired.setSize(200,50);
+                wired.setSize(300,110);
                 wired.setLocation(150,50);
+
+                ImageIcon imageIcon1 = new ImageIcon("/home/iiiiiii/Desktop/whatshouldilearnproject/img/positive.png");
+                Image image1 = imageIcon1.getImage();
+                Image newimg1 = image1.getScaledInstance(110,110, java.awt.Image.SCALE_SMOOTH);
+                imageIcon1 = new ImageIcon(newimg1);
+                positiveNews.setIcon(imageIcon1);
+
+                ImageIcon imageIcon2 = new ImageIcon("/home/iiiiiii/Desktop/whatshouldilearnproject/img/so-logo.png");
+                Image image2 = imageIcon2.getImage();
+                Image newimg2 = image2.getScaledInstance(300,110, java.awt.Image.SCALE_SMOOTH);
+                imageIcon2 = new ImageIcon(newimg2);
+                stackOverflow.setIcon(imageIcon2);
+
+                ImageIcon imageIcon3 = new ImageIcon("/home/iiiiiii/Desktop/whatshouldilearnproject/img/wired.png");
+                Image image3 = imageIcon3.getImage();
+                Image newimg3 = image3.getScaledInstance(300,110, java.awt.Image.SCALE_SMOOTH);
+                imageIcon3 = new ImageIcon(newimg3);
+                wired.setIcon(imageIcon3);
+
+
+
                 positiveNews.setLocation(150,150);
-                stackOverflow.setSize(200,50);
+                stackOverflow.setSize(300,110);
                 stackOverflow.setLocation(150,250);
 
-                positiveNews.setSize(200,50);
+                positiveNews.setSize(300,110);
 
                 positiveNews.addActionListener(new ActionListener() {
                     public void actionPerformed(ActionEvent e) {
