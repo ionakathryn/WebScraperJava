@@ -14,7 +14,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class Scraper {
-    static String[] content = new String[500];
+    static String[] content = new String[20];
     public static void main(String[] args) {
         MainFrame frame = new MainFrame();
         frame.setVisible(true);
